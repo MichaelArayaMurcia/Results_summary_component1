@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ddd;
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+.pageWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: solid red; */
+}
+
+.topContainer {
+  background: linear-gradient(to top, #312ceb, #6743ff);
+  border-radius: 25px;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "HankenGrotesk-Medium";
+  src: URL("./assets/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+.resultTitle {
+  color: #c4baf9;
+  font-family: HankenGrotesk-Medium;
+}
+
+.resultNumber {
+  margin-top: 1.2em;
+  text-align: center;
+  font-family: HankenGrotesk-Medium;
+  color: #c4baf9;
+  background: linear-gradient(to bottom, #4c22ca, #4734ef);
+  padding: 2.7em;
+  border-radius: 100px;
+  width: 6em;
+  height: 6em;
+}
+
+.resultNumberTitle {
+  color: white;
+  font-size: 3rem;
+}
+
+.resultCategory {
+  font-family: HankenGrotesk-Medium;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1em;
+}
+
+.resultDescription {
+  text-align: center;
+  font-family: HankenGrotesk-Medium;
+  color: #c4baf9;
+  max-width: 9rem;
+}
+
+/* --------------------------------------------- */
+
+.bottomContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 3em;
+}
+
+.summaryTitle {
+  font-size: 1.2rem;
+  font-family: HankenGrotesk-Medium;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1em;
+}
+
+.summaryState {
+  margin-left: 0.6em;
+  font-family: HankenGrotesk-Medium;
+}
+
+.summaryScore {
+  font-family: HankenGrotesk-Medium;
+  color: hsl(224, 30%, 27%);
+  padding-right: 0.6em;
+}
+
+.state1 {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 15%);
+}
+
+.state2 {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 15%);
+}
+
+.state3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 15%);
+}
+
+.state4 {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 15%);
+}
+
+.summaryStateContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.6em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.summaryState {
+  flex-grow: 2;
+}
+
+.continueButton {
+  border: none;
+  box-shadow: none;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 50px;
+  color: white;
+  font-family: HankenGrotesk-Medium;
+  text-decoration: none;
+  border-color: hsl(224, 30%, 27%);
+  background-color: hsl(224, 30%, 27%);
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #ccc;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
